@@ -20,9 +20,15 @@
 - Automated workflows by associating session names with startup commands.
 - Useful in legacy environments or when tmux is unavailable or unwanted.
 
-## Session startup commands
+## Session Startup Commands
 
-In the 
+ascreen supports a configuration file named `profiles.ini` that allows you to define default startup commands for named screen sessions. This enables you to launch consistent, pre-configured environments just by referring to a session name — without typing the full command every time.
+
+When you create a session using:
+```bash
+ascreen new <session_name> [optional command]
+```
+If no command is explicitly provided, ascreen will look up the command associated with that session name in the `profiles.ini` file and automatically run it.
 
 ## requirements
 
