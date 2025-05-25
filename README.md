@@ -20,14 +20,29 @@
 - Automated workflows by associating session names with startup commands.
 - Useful in legacy environments or when tmux is unavailable or unwanted.
 
+## Session startup commands
+
+In the 
+
 ## requirements
 
 Python 3 installed. The script depends on `argparse` (standard with Python 3).
 
-## Installation
+## run
 
-Clone the repo and ensure you have Python 3 installed. The script depends on `argparse` (standard with Python 3).
-This will install ascreen as a global command:
+You can just dounload the repository and run `ascreen.py`.
+
+## Install as a global command
+To Install `ascreen` as a global command:
+1. Download the repository
+2. Move the repository folder to a permenent place
+3. Open the terminal in the `ascreen` folder and run:
 
 ```bash
 bash pycmd_install.sh ascreen.py
+```
+## Uninstall
+Open the terminal in the `ascreen` folder and run:
+```bash
+bash pycmd_uninstall.sh ascreen.py
+```
