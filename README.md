@@ -31,6 +31,7 @@ ascreen new <session_name> [optional command]
 If no command is explicitly provided, ascreen will look up the command associated with that session name in the `profiles.ini` file and automatically run it.
 
 ## commands
+| command | explanation |
 | -------- | ------- |
 |ls|Lists all the screen sessions.|
 |attach, r|Attaches a session.|
