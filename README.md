@@ -30,6 +30,16 @@ ascreen new <session_name> [optional command]
 ```
 If no command is explicitly provided, ascreen will look up the command associated with that session name in the `profiles.ini` file and automatically run it.
 
+## commands
+|ls|Lists all the screen sessions.|
+|attach, r|Attaches a session.|
+|new|Creates a new session, and sends a command.|
+|restart|Closes a session, recreates it, and sends a command.|
+|stop|Stops a session: sends ctrl+C, quits, and wipes|
+|stop-all|Stops all of the screens|
+|stop-unnamed|Stops all of the unnamed screens|
+|wipe|Wipes all dead screens|
+
 ## requirements
 
 Python 3 installed. The script depends on `argparse` (standard with Python 3).
