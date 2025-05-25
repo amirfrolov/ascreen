@@ -16,7 +16,7 @@
 ## Why use `ascreen`?
 
 - If you use GNU Screen and want better session automation and management.
-- Graceful shutdown of sessions to avoid orphan processes.
+- Graceful shutdown of sessions by sending them Ctrl+C to avoid orphan processes.
 - Automated workflows by associating session names with startup commands.
 - Useful in legacy environments or when tmux is unavailable or unwanted.
 
@@ -31,6 +31,7 @@ ascreen new <session_name> [optional command]
 If no command is explicitly provided, ascreen will look up the command associated with that session name in the `profiles.ini` file and automatically run it.
 
 ## commands
+| -------- | ------- |
 |ls|Lists all the screen sessions.|
 |attach, r|Attaches a session.|
 |new|Creates a new session, and sends a command.|
@@ -39,6 +40,7 @@ If no command is explicitly provided, ascreen will look up the command associate
 |stop-all|Stops all of the screens|
 |stop-unnamed|Stops all of the unnamed screens|
 |wipe|Wipes all dead screens|
+
 
 ## requirements
 
